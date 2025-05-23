@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="addition"></h1>
+    <h1 id="addition1"></h1>
+    
+    <h1 id="subtration"></h1>
+    <h1 id="subtration1"></h1>
+    
+    <h1 id="multipication"></h1>
+    <h1 id="multipication1"></h1>
+
+    <h1 id="divison"></h1>    
+    <h1 id="divison1"></h1>
+
+    <script>
+    
+    //(+)
+    
+    a=30
+    b=++a + ++a
+    document.getElementById("addition").innerText=b; 
+
+    a=25
+    b=a++ + a++
+    document.getElementById("addition1").innerText=b;
+
+    a=76
+    b= ++a * ++a    
+    document.write(b)
+    //(-)
+
+    a=112
+    b=--a - --a
+    document.getElementById("subtration").innerText=b;
+
+    a=152
+    b=a-- - a--
+    document.getElementById("subtration1").innerText=b;
+
+    //(*)
+
+    a=28
+    b=++a * ++a
+    document.getElementById("multipication").innerText=b; 
+
+    a=61
+    b=a++ * a++
+    document.getElementById("multipication1").innerText=b;
+
+   //(/)
+
+   a=89
+   b=++a / ++a
+   document.getElementById("divison").innerText=b;
+   
+   a=26
+   b=--a / --a
+   document.getElementById("divison1").innerText=b;
+
+    
+    </script>
+
+</body>
+</html>

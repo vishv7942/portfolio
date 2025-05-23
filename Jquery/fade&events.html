@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+<style>
+    .box{
+        display: none;
+    }
+</style>
+</head>
+<body>
+    
+    <div class="m-5">
+    <button id="fin" class="btn btn-primary">Fade In</button>
+    <button id="fout" class="btn btn-danger">Fade Out</button>
+    <button id="ftgl" class=" btn btn-success">Fade Toggle</button>
+    <button id="fto" class="btn btn-info">Fade To</button>
+</div>
+    <div class="box bg-warning">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, obcaecati neque. Quo vel, rerum dignissimos qui praesentium, illum esse dolores magnam nam culpa sint possimus nulla repudiandae. Similique, culpa sint.
+    </div>
+    
+  
+    <script src="jquery-3.7.1.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#fin").click(function(){
+                $(".box").fadeIn();
+            })
+
+            $("#fout").dblclick(function(){
+                $(".box").fadeOut();
+            })
+
+            $("#ftgl").mouseenter(function(){
+                $(".box").fadeToggle();
+            })
+
+            $("#fto").mouseleave(function(){
+                $(".box").fadeTo("slow",0.5);
+            })
+        })
+    </script>
+</body>
+</html>

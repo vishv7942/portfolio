@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+</head>
+<style>
+    .box *{
+        border: 2px solid #ddd;
+        margin: 15px;
+        padding: 15px;
+        display: block;
+    }
+</style>
+<body class="m-5">
+    <div class="box">
+        <p>paragraph 1</p>
+        <span>span tag here</span>
+        <h2>heading 2</h2>
+        <h3>heading 3</h3>
+        <div> how are you</div>
+        <h6>heading 6</h6>
+        <span>hello</span>
+        <p>paragraph 2</p>
+    </div>
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        $(function(){
+            $("h3").siblings().css("border-color","red")
+            $("h3").next().css("border-color","yellow")
+            $("h3").nextAll().css("border-color","yellow")
+            $("h3").nextUntil("p").css("border-color","blue")
+            $("h3").prev().css("border-color","pink")
+            $("h3").prevAll().css("border-color","orange")
+            $("h3").prevUntil().css("background-color","silver")
+        })
+    </script>
+</body>
+</html>

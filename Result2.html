@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .box {
+            -height: 750px;
+            -width: 500px;
+            background-color: rgb(113, 220, 237);
+            -margin: 10px;
+            box-shadow: 0px 5px 15px;
+        }
+
+        h2 {
+            background-color: red;
+            box-shadow: 0px 5px 15px;
+        }
+    </style>
+
+</head>
+
+<body style="background-color: rgb(255, 255, 255);">
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-5">
+
+                <div class=" box rounded mt-5">
+                    <h2 class="text-center border border-black">Result</h2>
+                    <div class="p-4 was-validated">
+
+                        <input type="text" placeholder="Enter Full Name" class="form-control " required>
+                        <div class="invalid-feedback">Please Enter Name </div>
+                        <div class="valid-feedback">Success</div>
+
+                        <input type="text" placeholder="Enter Roll Number" class="form-control">
+                    </div>
+
+                    <h4 class="ms-4 m-0 text-center ">Subject</h4>
+                    <div class="p-4">
+                        <label for="">GUJRATI :</label>
+                        <input type="number" class="form-control">
+                        <label for="">HINDI :</label>
+                        <input type="number" class=" form-control">
+                        <label for="">ENGLISH :</label>
+                        <input type="number" class=" form-control">
+                        <label for="">MATHS :</label>
+                        <input type="number" class=" form-control">
+                        <label for="">SCIENCE :</label>
+                        <input type="number" class=" form-control">
+                        <label for="">ACCOUNT :</label>
+                        <input type="number" class=" form-control">
+                        <label for="">STAT :</label>
+                        <input type="number" class="form-control">
+                    </div>
+                    <div style="padding-inline: 150px;">
+                        <button class="btn btn-danger w-100 ">Submit</button>
+                    </div>
+                </div>
+            </div>
+                    
+            <div class="col-md-3 border border-black mt-5 bg-light h-50" style="margin-left: 70px;"><br>
+               <label for="" >Name :</label><br>
+               <label for="" class="mt-2">Roll No :</label><br>
+               <label for="" class="mt-2">Totle :</label><br><br>
+
+
+                <b class="" > Congratulations You Have Pass.</b><br><br>
+
+                <img src="IMAGE/download.jpeg" alt="" class="d-block mx-auto">
+                
+            </div>
+            <div class="col-md-3 border border-black mt-5 h-50 ms-2 bg-light"><br>
+                <label for="" >Name :</label><br>
+                <label for="" class="mt-2">Roll No :</label><br>
+                <label for="" class="mt-2">Totle :</label><br><br>
+
+                <b class="" > You Are Fail.</b><br><br>
+
+                <img src="/IMAGE/download (1).jpeg" alt="" width="225px" height="225px" class="d-block mx-auto">
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

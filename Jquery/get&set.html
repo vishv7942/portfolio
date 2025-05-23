@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+</head>
+<body class="m-5">
+    
+    <button class="btn btn-primary" id="gettext">Get Text</button>
+    <button class="btn btn-info" id="gethtml">Get HTML</button>
+    <button class="btn btn-danger" id="getval">Get Value</button>
+    <button class="btn btn-warning" id="getatrr">Get Atrribute</button>
+<br><br>
+    <button class="btn btn-primary" id="gettext1">Set Text</button>
+    <button class="btn btn-info" id="gethtml1">Set HTML</button>
+    <button class="btn btn-danger" id="getval1">Set Value</button>
+    <button class="btn btn-warning" id="getatrr1">Set Atrribute</button>
+
+
+    <h1>
+        Good morning ! <b>India</b> is my <i>contry</i>
+    </h1>
+    <input type="text" value="adam smith">
+    <a href="https://www.flipcart.com/">Google</a>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="jquery-3.7.1.js"></script>
+
+    <script>
+
+        // $(document).ready(function(){
+        //     $("#gettext").click(function(){
+        //         alert("text:" +$("h1").text())
+        //     })
+
+        //     $("#gethtml").click(function(){
+        //         alert("" +$("h1").html())
+        //     })
+
+        //     $("#getval").click(function(){
+        //         alert("" +$("input").val())
+        //     })
+
+        //     $("#getatrr").click(function(){
+        //         alert("" +$("a").attr("href"))
+        //     })
+        // })
+
+
+
+
+
+        $(document).ready(function(){
+            $("#gettext").click(function(){
+                alert("text:" +$("h1").text())
+            })
+
+            $("#gethtml").click(function(){
+                alert("HTML :"+$("h1").html())
+            })
+
+            $("#getval").click(function(){
+                alert("value:"+$("input").val())
+            })
+
+            $("#getatrr").click(function(){
+                alert("link:" +$("a").attr("href"))
+            })
+
+                    
+
+            $("#gettext1").click(function(){
+                $("h1").text("hello,india")
+            })
+
+            $("#gethtml1").click(function(){
+                $("h1").html("<i>hello</i><u>world</u>")
+            })
+
+            $("#getval1").click(function(){
+                $("input").val("hello")         
+              })
+
+              $("#getatrr1").click(function(){
+               $("a").atrr("href","https://www.google.com/")
+              })  
+        })
+    </script>
+</body>
+</html>

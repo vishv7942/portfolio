@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+</head>
+<body class="m-4">
+    
+    <button class="btn btn-secondary" id="rmv">Remove</button>    
+    <button class="btn btn-dark" id="empty">Empty</button>
+    <button class="btn btn-danger" id="show">Show</button>
+        <div class=" box border bg-secondary p-3 rounded-2 mt-2" style="height: 150px;">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam animi magnam illum, recusandae odio at molestiae nostrum non voluptatem reprehenderit nihil officia beatae culpa sapiente dolorum distinctio modi. Non eaque consequuntur aliquid optio veritatis, eveniet perferendis aperiam soluta ipsa dolorum quam voluptatum, distinctio quod molestiae suscipit! Animi eveniet natus quidem quis praesentium repellat provident rerum iusto commodi facere beatae quod itaque quos sit cum exercitationem molestiae sunt nesciunt, odio eos tempore ut excepturi ipsum iure! Corporis, hic iure? Magni ipsam eligendi omnis sit nihil aliquam officiis modi provident, a voluptate doloremque necessitatibus quae. Accusamus voluptates officia excepturi quaerat minima illo!
+        </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="jquery-3.7.1.js"></script>
+
+    <script>
+        $(function(){
+            $("#rmv").click(function(){
+                $(".box").remove()
+            })
+            
+            $("#empty").click(function(){
+                $(".box").empty()
+            })
+
+        })
+    </script>
+</body>
+</html>

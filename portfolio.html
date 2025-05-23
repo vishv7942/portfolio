@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> VISHV Portfolio</title>
+    <link rel="stylesheet" href="CSS/all.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    
+   
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    margin: 0;padding: 0;
+    background-color: rgb(0, 0, 33);
+    -background-image: url(IMAGE/rear-view-programmer-working-all-night-long.jpg);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    -background-repeat:no-repeat;
+    -background-size: cover;
+    -overflow: hidden;
+}
+.mainsection{
+    background-image: url(IMAGE/rear-view-programmer-working-all-night-long.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    -background-color: rgb(18, 18, 62);
+    -background-color: blueviolet;
+    -position: fixed;
+    top: 0;
+    width: 100%;
+
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+}
+nav ul li a{
+   text-decoration: none;
+   color: white;
+   font-size: 18px;
+}
+
+nav ul li a:hover{
+   color: rgb(176, 103, 244);
+   -font-size: .9rem;
+   -text-decoration: underline;
+}
+nav b{
+    color: rgb(144, 60, 223);
+}
+main hr{
+    border: 1px;
+    background-color: rgb(144,60, 223);
+    height: 6px;
+    margin-top: 240px;
+    margin-left: 60px ;
+    margin-right: 60px;
+    
+}
+.left{
+    font-size: 1.5rem;
+}
+.firstsection {
+    display: flex;
+    justify-content: space-around;
+    margin: 80px 0;
+    align-items: center;
+}
+.firstsection > div{
+   width: 40%;
+}
+.leftsection{
+    font-size: 50px;
+    /* justify-content: center; */
+    margin-top: 60px;
+    font-weight: bold; 
+    }
+.leftsection button{
+    margin-top: 60px;
+}    
+.rightsection img {
+    width: 80%;
+    margin: 50px 0;
+    }
+
+.purple{
+    color: rgb(170, 107, 228);
+}    
+#element{
+    color: rgb(170, 107, 228);
+}
+.secondsection{
+max-width: 80vw;
+margin: auto;
+}
+.btn-container button{
+border: .1rem solid  rgb(170, 107, 228);
+font-size:  1.1rem;
+padding: .8rem 1.5rem;
+border-radius: 30rem;
+cursor: pointer;
+transition: .5s ease;
+
+
+}
+button:nth-child(1){
+    background-color:rgb(170, 107, 228);
+    color: #262525;
+    
+}
+button:nth-child(2){
+    background-color: transparent;
+    color: white;
+    margin-left: 2rem;
+    
+}
+button:nth-child(1):hover{
+    background-color: transparent;
+    color: white;
+}
+
+button:nth-child(2):hover{
+    background-color:rgb(170, 107, 228);
+    color: #262525;
+}
+
+.resume-section h2{
+    font-weight: bold;
+    color: rgb(144, 60, 223) ;
+    font-size: 45px;
+    margin-left: 40%;
+    margin-top: 30px;
+}
+
+.resume-section hr{
+    color: rgb(144, 60, 223);
+    height: 10px;
+    margin: 20px 60px 20px 60px;
+}
+.resume-category1 h3{
+    font-weight: bold;
+    color: rgb(144, 60, 223) ;
+    font-size: 45px;
+    margin-left: 75px;
+    margin-top: 30px;
+
+}
+
+.resume-category1 hr{
+    color: rgb(144, 60, 223);
+    height: 10px;
+    margin: 20px 60px 20px 60px;
+
+}
+.resumename h1{
+    color: rgb(144, 60, 223);
+    font-size:35px ;
+    font-weight:600;
+    margin-left:75px ;
+}
+.resumename ul li a{
+    list-style: none;   
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+.resumename ul li a:hover{
+    color: rgb(176, 103, 244);
+}
+
+.resumename ul{
+    list-style: none;   
+}
+
+.resumeprofile h3{
+    color: rgb(144, 60, 223);
+    font-size:35px ;
+    font-weight:600;
+    margin-left:75px ; 
+    font-weight: bold;
+}
+.resumeprofile .loremdiv{
+    margin-left:35px ;
+}
+.resume-category h3{
+    color: rgb(144, 60, 223);
+    font-size:35px ;
+    font-weight:600;
+    margin-left:75px ; 
+    font-weight: bold;
+}
+.resume-category .skills-list li a{
+    list-style: none;   
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    margin-left: 40px;
+}
+.resume-category .skills-list ul li a :hover {
+    color: rgb(176, 103, 244);
+}
+.projectname h3{
+    color: rgb(144, 60, 223);
+    font-size:35px ;
+    font-weight:600;
+    margin-left:75px ; 
+    font-weight: bold;
+}
+.projectname ul li{
+    margin-left: 20px;
+}
+.resume-item{
+    margin-left: 35px;
+}
+.skills-section {
+  background:(rgb(18, 18, 62), rgb(18, 18, 62));
+  -background-color: rgb(18, 18, 62);
+  padding: 80px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-title {
+  font-size: 40px;
+  color:rgb(144, 60, 223); 
+  margin-bottom: 60px;
+  font-weight: bold;
+  -text-shadow: 0 0 10px #00ffc8;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 40px;
+  padding: 0 20px;
+}
+
+.skill-card {
+  background: rgba(255, 255, 255, 0.05);
+  -border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  -backdrop-filter: blur(10px);
+  -box-shadow: 0 0 25px rgba(0, 255, 200, 0.1);
+  transition: 0.4s ease;
+  padding: 30px 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  -background: radial-gradient(circle, rgba(0,255,200,0.2) 0%, transparent 70%);
+  animation: rotate 6s linear infinite;
+  z-index: 0;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  -box-shadow: 0 0 30px rgba(0, 255, 200, 0.5);
+}
+
+.skill-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.skill-card h3 {
+  font-size: 18px;
+  color: #fff;
+  z-index: 1;
+  position: relative;
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;  
+  height: 100%;
+  overflow: auto;
+  -background-color: rgb(144, 60, 223);
+}
+
+.modal-content {
+  -background-color: rgb(144, 60, 223);;
+  margin: 10% auto;
+  padding: 20px 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  color: #fff;
+  -box-shadow: 0 0 30px rgba(0, 255, 200, 0.5);
+  animation: slideUp 0.4s ease;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+#remove{
+  background-color: black;
+  border-radius: 10px;
+}
+.profile ul li{
+  list-style: none;   
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+ul li a {
+list-style: none;
+text-decoration: none;
+color: rgb(144, 60, 223); 
+
+}
+.contact-me{
+  background-color: black;
+}
+#demo{
+  background:(rgb(18, 18, 62), rgb(18, 18, 62));
+}
+</style>
+</head>
+<body>
+     
+    <!-- header -->
+    <section class="mainsection active" id="home">
+    <header>
+        <nav>
+            <div class="left">VISHV'S <b>Portfolio</b></div>
+            <div class="right">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="#abt">About</a></li>
+                    <li><a href="skill.html">Skill</a></li>
+                    <li><a href="/">Project</a></li>
+                    <li><a href="" data-bs-toggle="offcanvas" data-bs-target="#demo">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main >
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, my name is <span class="purple">VISHV</span> 
+                <div>and i am a </div>
+                <span id="element"></span>
+                <div class="btn-container">
+                    <a href=""><button>HIRE ME</button></a>
+                    <a href=""><button>VIEW PROJECT</button></a>
+                    </div>
+            </div>
+            
+            <div class="rightsection">
+               <!-- right -->
+            </div>
+        </section>
+        <hr>
+     </section>   
+    </main>
+
+                        <!-- resume -->
+
+
+    <section class="resume-section" id="abt">
+        <h2>Resume</h2>
+            <hr>
+        
+        <div class="resumename">
+            <h1>VISHV CHAUDHARY</h1>
+            <ul>
+                <li>Email:<a href=""><span style="margin-left: 30px;">vishvchaudhary7942@gmail.com</span></a></li>
+                <li>Phone:<a href=""><span style="margin-left: 24px;">8320780896</span></a></li>
+                <li>Address:<a href=""><span style="margin-left:9px;">At-Randala Ta-visanagar</span></a></li>
+                <li>Dist:<a href=""><span style="margin-left: 45px;">Mahesana</span></a></li>
+                <li>Pincode:<a href=""><span style="margin-left: 9px;">384315</span></a></li>
+            </ul>
+        </div>
+
+        <div class="resumeprofile">
+            <hr>
+            <h3>Profile</h3>
+            <div class="loremdiv">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe velit repellat necessitatibus nostrum quae accusamus, quisquam nam rerum aliquid facere quod qui excepturi odio voluptas iste rem quo id officia inventore consequuntur illum animi magnam sequi. Itaque esse dolorum, cumque ullam commodi saepe laborum officia? Reiciendis excepturi deleniti quo enim.</div>
+        </div>
+        <hr>
+
+         <div class="resume-category">
+          <h3>Skills</h3>
+          <ul class="skills-list list-unstyled">
+            <li><a href="">Figma</a></li>
+            <li><a href="">HTML</a></li>
+            <li><a href="">CSS</a></li>
+            <li><a href="">Bootstrap</a></li>
+            <li><a href="">JavaScript</a></li>
+            <li><a href="">JQuery</a></li>
+          </ul>
+        </div>
+
+        <hr>
+
+        <div class="projectname">
+            <h3>Project</h3>
+            <ul>
+                <li><strong>Personal Portfolio Website</strong> Created a  using HTML, CSS to showcase my projects and skills.</li>
+                <li><strong>Design template of TCP india company</strong>Created a responsive portfolio using HTML, CSS, and JavaScript to showcase my projects and skills.  </li>
+                <li><strong>Responsive Landing Page</strong> Designed and coded a marketing landing page with modern layout using CSS Flexbox and media queries.</li>
+              </ul>
+        </div>
+<hr>
+
+        <div class="resume-category1">
+            <h3>Education</h3>
+    
+            <div class="resume-item">
+              <h4>Bachelor of Arts</h4>
+              <p class="company">Hemchandrachary North Gujarat University| 2019 - 2023</p>
+              <p>Specialized in Computer Geography.</p>
+            </div>
+          </div>
+          <hr>
+      </section>
+
+    
+      
+      <!-- Skills Section -->
+
+  <section id="skills" class="skills-section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-down">My Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+          
+          <div >
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"data-bs-toggle="modal" data-bs-target="#html5modal">
+            <h3>HTML5</h3>
+           
+          </div>
+        </div>
+          
+          <!-- Modal Box -->
+          <div id="html5modal" class="modal fade" >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">HTML5</h2>
+                    <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                <p >HTML5 is the standard markup language used to create web pages. It provides structure to your website and supports multimedia elements like audio, video, and canvas without plugins.</p>
+              </div>
+              </div>
+              
+              
+            </div>
+          </div>
+        
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+            <div>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+          <h3>CSS3</h3>
+        </div>
+        </div>
+        <div id="css-modal" class="modal">
+            <div class="modal-content">
+              <span class="close2">&times;</span>
+              <h2>HTML5</h2>
+              <p>HTML5 is the standard markup language used to create web pages. It provides structure to your website and supports multimedia elements like audio, video, and canvas without plugins.</p>
+            </div>
+          </div>
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
+          <h3>Bootstrap</h3>
+        </div>
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+          <h3>JavaScript</h3>
+        </div>
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="500">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+          <h3>Python</h3>
+        </div>
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="600">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
+          <h3>Figma</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+      <!-- contact me section -->
+<div class="contact-me bg-danger" >
+    <div class="offcanvas offcanvas-end" id="demo" style="background-color: rgb(18, 18, 62);
+">
+
+        <div class="offcanvas-header">
+            <h4 class="offcanvas-title" style="color: white;">Contact detail</h4>
+            <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        
+        <div class="profile offcanvas-body">
+
+          <h1 style="color: white;">VISHV CHAUDHARY</h1>
+          <ul>
+              <li style="color: white;">Email:<a href=""><span style="margin-left: 30px;">vishvchaudhary7942@gmail.com</span></a></li>
+              <li style="color: white;">Phone:<a href=""><span style="margin-left: 24px;">8320780896</span></a></li>
+              <li style="color: white;">Address:<a href=""><span style="margin-left:9px;">At-Randala Ta-visanagar</span></a></li>
+              <li style="color: white;">Dist:<a href=""><span style="margin-left: 45px;">Mahesana</span></a></li>
+              <li style="color: white;">Pincode:<a href=""><span style="margin-left: 15px;">384315</span></a></li>
+          </ul>
+
+
+            <button class="btn" id="remove" data-bs-dismiss="offcanvas" style="  background-color:rgb(170, 107, 228);">Close</button>
+        </div>
+      </div>
+   </div>
+
+ 
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+</html>

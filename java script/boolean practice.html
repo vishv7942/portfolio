@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <button id="Square" onclick="Square()">Square</button>
+        <button id="Rectangle" onclick="Rectangle()">Rectangle</button>
+        <button id="Circle" onclick="Circle()">Circle</button>
+    </div>
+    <script>
+        function Square()
+        {
+            document.getElementById("Square").style.height="100px";
+            document.getElementById("Square").style.width="100px";
+            document.getElementById("Square").style.backgroundColor="blue";
+        }
+        
+        function Rectangle()
+        {
+            document.getElementById("Rectangle").style.height="100px";
+            document.getElementById("Rectangle").style.width="150px";
+            document.getElementById("Rectangle").style.backgroundColor="red";
+        }
+
+        function Circle()
+        {
+            document.getElementById("Circle").style.height="100px";
+            document.getElementById("Circle").style.width="100px";
+            document.getElementById("Circle").style.backgroundColor="yellow";
+            document.getElementById("Circle").style.borderRadius="50%";
+        }
+    </script>
+</body>
+</html>

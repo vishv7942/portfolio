@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+</head>
+<body>
+    <button class="btn btn-primary" id="append">append</button>
+    <button class="btn btn-secondary" id="prepend">prepend</button>
+    <button class="btn btn-info" id="after">after</button>
+    <button class="btn btn-warning" id="before">before</button>
+<br>
+<b>hello</b>
+<ul>
+    <li>list 1</li>
+    <li>list 2</li>
+    <li>list 3</li>
+    <li>list 4</li>
+</ul>
+<h1></h1>
+    <img src="image/TCP INDIA LOGO.png" alt="" height="150px">
+    <script src="jquery-3.7.1.js"></script>
+
+    <script>
+        $(function(){
+            $("#append").click(function(){
+                $("ul").append("<li>list 5</li>")
+                $("b").append(" india")
+            })
+            $("#prepend").click(function(){
+                $("ul").prepend("<li> this is a list</li>")
+                $("h1").prepend("good morning india")
+            })
+            $("#after").click(function(){
+                $("img").after("<b>this is image</b>")
+            })
+            $("#before").click(function(){
+                $("img").before("<b>this is tcp log</b>")
+            })
+        })
+    </script>
+</body>
+</html>

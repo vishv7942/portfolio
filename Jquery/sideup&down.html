@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+</head>
+<body class="m-5">
+    
+    <h1 class="mb-4">This Is Demo Of Jquery Action</h1>
+
+    <button class="btn btn-danger" id="sup">Slide Up</button>
+    <button class="btn btn-primary" id="sdown">Slide Down</button>
+    <button class="btn btn-success" id="stgl">Slide Toggle</button>
+    <button class="btn btn-warning" id="stop">Stop</button>
+
+    <div class="box border bg-light mt-3 rounded overflow-hidden">
+        <div class="p-3">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias ipsa odio, eum doloribus commodi molestiae, perspiciatis quod ad laborum ipsam soluta. Ducimus obcaecati sint quis quae deserunt alias iusto magnam cum eveniet, vitae autem dolorem ad rem! Commodi ratione odio laudantium at, dolorum et est incidunt distinctio doloribus aut cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia id, ut dolore alias hic architecto optio? Itaque deserunt amet unde, voluptatem, dicta nulla nostrum atque dolores esse fugiat magnam accusantium neque ducimus quia perspiciatis rem cumque optio, doloremque voluptate harum sunt perferendis ratione velit id. Reiciendis quas culpa atque dolor?
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="jquery-3.7.1.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+
+            $("h1").click(function(){
+                $(this).hide();
+            })
+
+            $("#sup").click(function(){
+                $(".box").slideUp(3000);
+            })
+
+            $("#sdown").click(function(){
+                $(".box").slideDown(3000);
+            })
+
+            $("#stgl").click(function(){
+                $(".box").slideToggle(3000)
+            })
+
+            $("#stop").click(function(){
+                $(".box").stop();
+            })
+        })
+
+
+    </script>
+</body>
+</html>

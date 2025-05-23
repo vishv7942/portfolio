@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .d1
+        {
+            height: 200px;
+            width: 100px;
+            border: 1px solid black;
+        }
+        .d2
+        {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: blue;
+            margin-top: 150px;
+        }
+    </style>
+</head>
+<body onkeypress="jump()">
+    <div class="d1">
+        <div id="d2" class="d2"></div>
+    </div>
+    <button onkeypress="jump()">Jump Up</button>
+    <button onkeydown="jump1()">Jump Down</button>
+
+    <script>
+        function jump()
+        {
+            document.getElementById("d2").style.marginTop="0px"
+            document.getElementById("d2").style.marginLeft="20px"
+        }
+        function jump1()
+        {
+            document.getElementById("d2").style.marginTop="150px";
+        }
+    </script>
+</body>
+</html>

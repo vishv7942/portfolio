@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="answer1"></h1>
+    <h1 id="answer2"></h1>
+    
+    <h1 id="vishv"></h1>
+    <h1 id="vishv2"></h1>
+
+    <h1 id="v1"></h1>
+    <h1 id="v2"></h1>
+
+    <h1 id="v3"></h1>
+    <h1 id="v4"></h1>
+
+    <h1 id="v5"></h1>
+    <h1 id="v6"></h1>
+
+    <script>
+        a=25
+        b=++a
+
+        document.getElementById("answer1").innerText=a;
+        document.getElementById("answer2").innerText=b;
+        
+        a=29
+        b=a++
+
+        document.getElementById("vishv").innerText=a;
+        document.getElementById("vishv2").innerText=b;
+
+        a=35
+        b=--a
+
+        document.getElementById("v1").innerText=a;
+        document.getElementById("v2").innerText=b;
+
+        a=67
+        b=a--
+
+            document.getElementById("v3").innerText=a;
+        document.getElementById("v4").innerText=b;
+
+        a=30
+        b=++a + ++a
+        document.getElementById("v6").innerText=b;
+        
+
+    </script>
+    
+</body>
+</html>

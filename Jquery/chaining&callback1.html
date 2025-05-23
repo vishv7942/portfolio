@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+</head>
+<body>
+
+    <button class="btn btn-primary" id="chaining">chaining</button>
+    <button class="btn btn-info" id="callback">callback</button>
+
+    <h1>this is demo of chaining</h1>
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        $(function(){
+            $("#chaining").click(function(){
+                $("h1").css("color","red").slideUp(3000).slideDown(3000)
+            })
+
+            $("#callback").click(function(){
+                $("h1").hide();
+                alert("h1 is hide now")
+            })
+        })
+    </script>
+</body>
+</html>

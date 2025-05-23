@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" id="switch">
+    <button onclick="check()">submit</button>
+    <h1 id="result"></h1>
+
+    <script>
+
+        function check()
+        {
+            a= parseInt(document.getElementById("switch").value);
+
+            switch(a)
+            {
+                case 1:
+                    document.getElementById("result").innerText="sunday";
+                    break;
+
+            
+                 case 2:
+                    document.getElementById("result").innerText="monday";
+                    break;
+
+                case 3:
+                    document.getElementById("result").innerText="thuesday";
+                    break;
+   
+                default :
+                            document.getElementById("result").innerText="invalid number";
+
+            }
+        }
+    </script>
+</body>
+</html>

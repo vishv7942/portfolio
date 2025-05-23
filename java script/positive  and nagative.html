@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" id="number">
+    <button onclick="checkNumber()">Submit</button>
+    <h1 id="select"></h1>
+
+    <script>
+
+        
+        function checkNumber() {
+            code = parseInt(document.getElementById("number").value);
+            if (code > 0) {
+                document.getElementById("select").innerText = "number is positive";
+                document.getElementById("select").style.color = "blue";
+        
+            }
+            else {
+                document.getElementById("select").innerText = "number is nagative";
+                document.getElementById("select").style.color = "red";
+            }
+        }
+    </script>
+</body>
+
+</html>

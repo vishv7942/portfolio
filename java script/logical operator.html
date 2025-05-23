@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="number" id="amount">
+    <button id=" button" onclick="calculate();">Cheak Discount</button>
+    
+    <div>
+
+        <p>
+            1-499       => 0 <br>
+            500-1000    =>10% <br>
+            1001-3000   =>20% <br>
+            3001-5000   =>30% <br>
+            5001+       =>50%
+        </p>
+
+    </div>
+
+
+
+    <input type="number" id="age">
+    <button id=" button" onclick="submit();">submit</button>
+
+<div>
+    <p>
+        -18  (Not Eligible) <br>
+        18+  (Eligible)
+    </p>
+</div>
+
+
+
+    <input type="number" id="pass">
+    <button id="button" onclick="fail();">conform</button>
+<div>
+
+<p>
+    -33 (fail) <br>
+    33+(pass)
+</p>
+
+</div>
+
+
+    <script>
+
+            function calculate(){
+                var amount = parseInt(document.getElementById("amount").value);
+
+                var result = amount<=500
+                                    ?"10%"
+                                    :"20%";
+                                    alert(result);
+            }
+
+            function submit()
+            {
+                var age = parseInt(document.getElementById("age").value);
+
+                var between = age >=18
+                                    ? "Eligible"
+                                    :"Not Eligible"
+                                    alert(between);
+            }
+            
+            function fail()
+            {
+
+                var pass = parseInt(document.getElementById("pass").value);
+
+                var vishv = pass >=33   
+                                ? "pass"
+                                :"fail"
+                                alert(vishv);
+            }
+
+    </script>
+
+</body>
+</html>

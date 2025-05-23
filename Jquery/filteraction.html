@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+</head>
+<style>
+p
+{
+    padding: 15px;
+    border: 2px solid #ddd;
+}
+</style>
+<body>
+    <p> GOOD MORNING</p>
+    <p> PARAGRAPH 1</p>
+    <p> PARAGRAPH 2</p>
+    <p> PARAGRAPH 3</p>
+    <p> PARAGRAPH 4</p>
+
+
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        $(function(){
+            $("p").first().css("background-color","silver")
+            $("p").last().css("background-color","yellow")
+            $("p").eq(2).css("background-color","red")
+        })  
+    </script>
+</body>
+</html>

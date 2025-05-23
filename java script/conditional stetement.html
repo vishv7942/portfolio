@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>candidate must be 20-30</li>
+            <li>only male candidate allowed</li>
+        </ul>
+    </div>
+    <input type="number" placeholder="Enter your age" id="age">
+    <select id="gender">
+     <option value="male">male</option>
+     <option value="female">female</option>   
+    </select>
+    <button onclick="checkage()">Check</button>
+    <h1 id="result"></h1>
+
+    <script>
+        function checkage()
+        {
+            age= parseInt(document.getElementById("age").value);
+            gender=document.getElementById("gender").value;
+        
+        if(age>=20 && age <=30)
+        {
+            if(gender=="male")
+        {
+            document.getElementById("result").innerText="you are eligible";
+            document.getElementById("result").style.color="green";
+        }
+        else
+        {
+            document.getElementById("result").innerText="only male candidate allowed"
+            document.getElementById("result").style.color="blue";
+        }
+    }
+        else
+        {
+            document.getElementById("result").innerText="you are not eligible"
+            document.getElementById("result").style.color="red";
+        }
+    }
+    </script>
+</body>
+</html>

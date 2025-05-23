@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo
+        {
+            color: red;
+            font-size: 55px;
+            align-items: center;
+        }
+        .blue{
+            background-color: yellow;
+            color: blue;
+            padding: 15px;margin-top: 25px;
+            text-align: center;
+        }
+    </style>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+</head>
+<body class="m-5">
+    <button class="btn btn-primary" id="addcls">addclass</button>
+    <button class="btn btn-info" id="rmvcls">removeClass</button>
+    <button class="btn btn-secondary" id="tglcls">toggleClass</button>
+    <button class="btn btn-warning" id="cssproperty">CSS</button>
+
+    <h1>
+        india is my COUNTRY
+    </h1>
+    <h2 class="demo">good MORNING india</h2>
+
+    <h3>Hello india</h3>
+
+<script src="jquery-3.7.1.js"></script>
+<script>
+    $(function(){
+        $("#addcls").click(function(){
+            $("h1").addClass("blue")
+        })
+        $("#rmvcls").click(function(){
+            $("h2").removeClass("demo");
+        })
+        $("#tglcls").click(function(){  
+            $("h1").toggleClass("blue");    
+        })
+        $("#cssproperty").click(function(){
+            $("h3").css({
+                "font-size":"100px",
+                "color":"red",
+                "text-align":"center"
+            })
+        })
+
+    })
+</script>
+</body>
+</html>

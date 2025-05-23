@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+</head>
+<style>
+
+    #img
+    {
+        height: 300px;
+        width: 300px;
+        background-size: cover;
+        background-size: 100% 100%;
+    }
+    
+    .box
+    {
+        background-color: peachpuff;
+        box-shadow: 0px 5px 15px;
+    }
+
+    h2
+    {
+        background-color: skyblue;
+        box-shadow: 0px 5px 15px;
+    }
+    h4
+    {
+        background-color: yellow;
+        box-shadow: 0px 5px 15px;
+    }
+
+    </style>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6">
+
+            <div class="box rounded mt-5">
+                <h2 class="text-center ">Result</h2>
+                
+                <div class="p-4 was-validated">
+                    <input type="text" placeholder="Enter Full Name" class="form-control" id="name" required>
+                    <div class="invalid-feedback">Please Enter Name</div>
+                    <div class="valid-feedback">Success</div>
+                   
+                    <div class="was-validated">
+                   
+                        <input type="text" placeholder="Enter Roll Number" class="form-control" id="number" required>
+                        <div class="invalid-feedback">Enter Roll Number</div>
+                        <div class="valid-feedback">Success</div>
+                    </div>       
+
+                        <h4 class="mt-4 text-center">Subject</h4>
+                        <div class="p-4">
+                    
+                            <label>Gujarati</label>
+                            <input type="number" class="form-control" id="guj" required>
+                            <label>Hindi</label>
+                            <input type="number" class="form-control" id="hin" required>
+                            <label>Scince & Technology</label>
+                            <input type="number" class="form-control" id="st" required>
+                            <label>Social Scince</label>
+                            <input type="number" class="form-control" id="ss" required>
+                            <label>Maths</label>
+                            <input type="number" class="form-control" id="mat" required>
+                            <label>Sanskrit</label>
+                            <input type="number" class="form-control" id="san" required>
+                            <label>Computer</label>
+                            <input type="number" class="form-control" id="com" required>
+                        </div>
+
+                        <div>
+                            <button class="btn btn-danger w-100" onclick="result()">SUBMIT</button>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+
+
+            <!-- <div class="col-md-3 border border-black mt-5 h-50 ms-2 bg-light"><br>
+                <label for="">Name :</label><br>
+                <label for="" class="mt-2">Roll No :</label><br>
+                <label for="" class="mt-2">Total :</label><br><br>
+
+                <b style="color: green;">Congratulations You Have Pass</b><br><br>
+
+                <img src="/IMAGE/download.jpeg" alt="">
+
+            </div>
+
+            <div class="col-md-3 border border-black mt-5 h-50 ms-2 bg-light"><br>
+                <label for="">Name :</label><br>
+                <label for="" class="mt-2">Roll No :</label><br>
+                <label for="" class="mt-2">Total :</label><br><br>  
+
+                <b style="color: red;">You Are Fail</b><br><br>
+
+                <img src="/IMAGE/download (1).jpeg" alt="">
+
+            </div>
+ -->
+            <div class="col-md-6 border mt-5 bg-info rounded p-5">
+                <p id="pname"></p>
+                <p id="pno"></p>
+                <p id="total"></p>
+                <p id=per></p>
+                <h1 id="result"></h1>
+                <div id="img"></div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+<script>
+    
+    function result()
+    {
+        name =document.getElementById("name").value;
+        document.getElementById("pname").innerText="Name="+name;
+
+        no =document.getElementById("number").value;
+        document.getElementById("pno").innerText="Roll NO="+no;
+        
+        a=parseInt(document.getElementById("guj").value);
+        b=parseInt(document.getElementById("hin").value);
+        c=parseInt(document.getElementById("st").value);
+        d=parseInt(document.getElementById("ss").value);
+        e=parseInt(document.getElementById("mat").value);
+        f=parseInt(document.getElementById("san").value);
+        g=parseInt(document.getElementById("com").value);
+
+        total= a+b+c+d+e+f+g ;
+        document.getElementById("total").innerText="TOTAL ="+total;
+
+        per=total/7;
+        document.getElementById("per").innerText="PER ="+per;
+
+        if(total>=33)
+    {
+        document.getElementById("result").innerText="PASS";
+        document.getElementById("img").style.backgroundImage="url(download.jpeg)"
+    }   
+        else
+        {
+            document.getElementById("result").innerText="FAIL";
+            document.getElementById("img").style.backgroundImage="url(download (1).jpeg)"
+        }
+    }
+
+</script>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

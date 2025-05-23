@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="number" id="number">
+    <button onclick="clickhere()">cheak number</button>
+    <h1 id="vishv"></h1>
+
+    <script>
+        function clickhere()
+        {
+            no =parseInt(document.getElementById("number").value);
+            
+            if ( no %2 ==0)
+        {
+            document.getElementById("vishv").innerText="Even";
+            document.getElementById("vishv").style.color="green"
+        }
+        else
+        {
+            document.getElementById("vishv").innerText="odd";   
+            document.getElementById("vishv").style.color="red"
+        }
+
+
+
+
+
+
+        }
+    </script>
+</body>
+</html>

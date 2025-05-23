@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+</head>
+<body class="m-5">
+        <button class="btn btn-primary" id="apd">Append</button>
+        <button class="btn btn-info" id="ppd">Prepend</button>
+
+        <button class="btn btn-danger" id="after">After</button>
+        <button class="btn btn-warning"id="before">Before</button>
+        <br>
+<b>hello</b>
+
+    <ul>
+        <li>list item 1</li>
+        <li>list item 2</li>
+        <li>list item 3</li>
+        <li>list item 4</li>
+    </ul>
+
+    <img src="/image/TCP INDIA LOGO.png" alt="" height="150px">
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="jquery-3.7.1.js"></script> 
+
+    <script>
+        $(function(){
+            $("#apd").click(function(){
+                $("ul").append("<li>list item 5</li>");
+                $("b").append(" india")
+            })
+
+            $("#ppd").click(function(){
+                $("ul").prepend("<b><li> first tag in li </li></b>")
+                $("b").prepend("h1>good morning !")
+            })
+
+            $("#after").click(function(){
+                $("img").after("this is tcp image")
+            })
+
+            $("#before").click(function(){
+                $("img").before("<b>this is tcp logo</b>")
+            })
+        })
+    </script>
+</body>
+</html>

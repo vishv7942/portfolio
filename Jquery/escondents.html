@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <style>
+        .descendants{
+            border: 2px solid #ddd;
+        }
+        .descendants *{
+            border: 2px solid #ddd;
+            margin: 25px;
+            padding: 15px;
+            display: block;
+
+        }
+    </style>
+</head>
+<body class="m-5">
+    <div class="descendants">
+        <h1>Good Morning</h1>
+        <p class="prf1">
+            <b>Hello</b>
+            <span>hello india</span>
+        </p>
+        <p class="prf2">
+    
+            <span>hello india</span>
+        </p>
+        <p class="prf3">
+    
+            <span>hello india</span>
+        </p>
+    </div>
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        $(function(){
+            $(".descendants").children().css("border-color","red")
+            //$(".descendants").find("span").css("border-color","blue")
+        })
+    </script>
+
+</body>
+</html>

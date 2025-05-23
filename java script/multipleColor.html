@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="height: 300px; width: 50%; margin: auto;margin-top: 10px;">
+<div>
+    <label>height</label>
+    <input type="number" id="height"><br><br>
+    <label>width</label>
+    <input type="number" id="width"><br><br>
+    <input type="color" id="clr">
+    <button onclick="reddiv()">red</button>
+    <button onclick="greendiv()">green</button>
+    <button onclick="bluediv()">blue</button>
+    <button onclick="create()">create</button>
+</div>
+<br>
+<div id="ele">    
+</div>
+
+<script>
+    function create ()
+    {
+      var h =document.getElementById("height").value;
+      var w =document.getElementById("width").value;
+      var c =document.getElementById("clr").value;
+      document.getElementById("ele").style.height=h+"px";
+      document.getElementById("ele").style.width=w+"px";  
+      document.getElementById("ele").style.backgroundColor=c;
+    }
+
+
+function reddiv()
+{
+    var h = document.getElementById("height").value;
+    var w =document.getElementById("width").value;
+    document.getElementById("ele").style.height=h+"px";
+    document.getElementById("ele").style.width=w+"px";     
+    document.getElementById("ele").style.backgroundColor="red";
+}
+
+function greendiv(){
+
+    var h =document.getElementById("height").value;
+    var w =document.getElementById("width").value;
+    document.getElementById("ele").style.height=h+"px";
+    document.getElementById("ele").style.width=w+"px";
+    document.getElementById("ele").style.backgroundColor="green";
+
+}
+
+    function bluediv()
+    {
+        var h =document.getElementById("height").value;
+        var w =document.getElementById("width").value;
+        document.getElementById("ele").style.height=h+"px";
+        document.getElementById("ele").style.width=w+"px";
+        document.getElementById("ele").style.backgroundColor="blue"
+    }
+
+    
+
+</script>
+
+
+</body>
+</html>
